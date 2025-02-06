@@ -18,7 +18,7 @@ all: dvi dist install
 install: uninstall
 	@echo "-----------------INSTALLING-------------------"
 	@mkdir ./3DViewer
-	@cd ./frontend/viewir && qmake && make && make clean && rm Makefile && mv viewir.app ./../../3DViewer/
+	@cd ./frontend/viewir && qmake && make && make clean && rm Makefile && mv viewir.app ./../3DViewer/
 
 uninstall:
 	@echo "-----------------UNSTALLING-------------------"
